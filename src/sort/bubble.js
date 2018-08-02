@@ -26,7 +26,7 @@ function bubbleSort2 (originalArr) {
       }
     }
     if (!swapped) {
-      break
+      break;
     }
   }
   return array
