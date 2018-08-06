@@ -1,4 +1,11 @@
 const { swap } = require('../utils/array')
+
+/**
+ * Bubble sort implementation.
+ *
+ * @param {*[]} array
+ * @return sortedArray
+ */
 function bubbleSort (originalArr) {
   const array = [...originalArr]
   let swapped
@@ -13,7 +20,12 @@ function bubbleSort (originalArr) {
   } while (swapped)
   return array
 }
-
+/**
+ * Bubble sort second implementation.
+ *
+ * @param {*[]} array
+ * @return sortedArray
+ */
 function bubbleSort2 (originalArr) {
   const array = [...originalArr]
   let swapped = false
