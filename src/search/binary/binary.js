@@ -4,7 +4,7 @@ function binarySearch (originalArr, item) {
   let hight = array.length - 1
   while (low <= hight) {
     const middle = Math.floor(hight - low / 2)
-    let guess = array[middle]
+    const guess = array[middle]
     if (guess === item) {
       return array[middle]
     }
