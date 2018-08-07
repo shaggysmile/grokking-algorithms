@@ -4,7 +4,7 @@
  *
  * @param {*[]} sortedArray
  * @param {*} value
- * @return {value}
+ * @return {value|null} serached index or null
  */
 function binarySearch (originalArr, value) {
   const array = [...originalArr.sort((a, b) => a - b)]
@@ -14,7 +14,7 @@ function binarySearch (originalArr, value) {
     const middle = Math.floor(hight - low / 2)
     const guess = array[middle]
     if (guess === value) {
-      return array[middle]
+      return middle
     }
     if (guess > value) {
       hight = middle - 1

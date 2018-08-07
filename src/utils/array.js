@@ -4,7 +4,7 @@
  * @param {*[]} arr
  * @param {number} index1 - First index.
  * @param {number} index2 - Second index.
- * @return {array} array with swaped elements
+ * @return {array} Array with swaped elements
  */
 function swap (arr, index1, index2) {
   [arr[index1], arr[index2]] = [arr[index2], arr[index1]]

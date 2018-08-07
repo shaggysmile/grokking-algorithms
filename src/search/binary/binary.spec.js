@@ -8,14 +8,17 @@ describe('binary search', () => {
   })
   it('test found element', () => {
     const item = 4
-    expect(binarySearch(inputArray, item)).toEqual(item)
+    const expectedIndex = 4
+    expect(binarySearch(inputArray, item)).toEqual(expectedIndex)
   })
   it('test not found element', () => {
     const item = 101
-    expect(binarySearch(inputArray, item)).toEqual(null)
+    const expectedIndex = null
+    expect(binarySearch(inputArray, item)).toEqual(expectedIndex)
   })
   it('test with letters', () => {
     const item = 'm'
-    expect(binarySearch(['a', 'b', 'c', 'm', 'x', 'y', 'z'], item)).toEqual(item)
+    const expectedIndex = 3
+    expect(binarySearch(['a', 'b', 'c', 'm', 'x', 'y', 'z'], item)).toEqual(expectedIndex)
   })
 })
